@@ -2,18 +2,12 @@
 
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:gravity="center_horizontal"
     android:background="#37c40c"
     android:id="@+id/menu4">
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="4"
-        android:id="@+id/textView" />
 
     <EditText
         android:layout_width="wrap_content"
@@ -68,14 +62,6 @@
         android:layout_marginTop="19dp" />
 
     <TextView
-        android:layout_height="50dp"
-        android:layout_below="@+id/textView"
-        android:layout_alignStart="@+id/nameET"
-        android:layout_marginTop="18dp"
-        android:id="@+id/testName"
-        android:layout_width="200dp" />
-
-    <TextView
         android:layout_width="match_parent"
         android:id="@+id/begruessungTW"
         android:layout_height="40dp"
@@ -90,5 +76,22 @@
         android:layout_below="@+id/testName"
         android:layout_alignParentEnd="true"
         android:layout_marginTop="15dp" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="200dp"
+        android:layout_height="150dp"
+        android:layout_alignStart="@+id/nameET"
+        android:layout_alignTop="@+id/testGeb"
+        app:srcCompat="@color/cast_expanded_controller_ad_container_white_stripe_color"/>
+
+    <Button
+        android:id="@+id/bBild"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/speichernButton"
+        android:layout_marginEnd="25dp"
+        android:text="Bild Hochladen"/>
 
 </RelativeLayout>
